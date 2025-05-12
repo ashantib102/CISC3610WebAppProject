@@ -24,6 +24,8 @@ const RESOURCES_TO_CACHE = [
   "./images/llm-explorer-home.png",
   "./images/llm-explorer-details.png",
   "./images/llm-explorer-mobile-app.png",
+  "./sounds/ChatGPTInfo.mp3",
+  "./sounds/ClaudeInfo.mp3"
 ];
 
 // Install event - cache resources

@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "May reproduce biases or stereotypes present in its training data, despite moderation layers.",
       ],
       image: "images/chatgpt-logo.png",
-      audio: "/audio/chatgpt.mp3",
+      audio: "./sounds/ChatGPTInfo.mp3",
     },
     {
       id: "claude",
@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "May refuse to answer harmless questions if they are misclassified as unsafe.",
         "Despite safety layers, can still hallucinate or misstate nuanced factual details.",
       ],
-      image: "images/claude-logo.webp",
-      audio: "/audio/claude.mp3",
+      image: "./images/claude-logo.webp",
+      audio: "./sounds/ClaudeInfo.mp3",
     },
     {
       id: "gemini",
