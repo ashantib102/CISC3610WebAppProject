@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "ChatGPT is a conversational AI chatbot from OpenAI, built on the GPT‑3.5 and GPT‑4 families. It supports multi‑turn dialogue, plugins, and even voice/image inputs on paid plans.",
       keyFeatures: [
-        "Multi‑turn, context‑aware chat",
-        "Text & code generation",
-        "Plugin & tool integration",
-        "Voice & image understanding",
+        "Maintains context over multiple conversational turns for coherent follow-ups.",
+        "Generates human‑like text and functional code based on user prompts.",
+        "Integrates with plugins and external tools for real‑time data access.",
+        "Understands voice commands and analyzes images to enrich interactions.",
       ],
       useCases: [
         "General Q&A and tutoring",
@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "Brainstorming ideas",
       ],
       limitations: [
-        "Knowledge cutoff (late 2021/2022)",
-        "Can hallucinate or err",
-        "Finite context window",
-        "May reflect training biases",
+        "Knowledge freezes after 2021–2022, missing recent developments.",
+        "Occasionally invents facts or confidently states incorrect information.",
+        "Limited context window can cause loss of earlier details.",
+        "May reflect biases or stereotypes present in training data.",
       ],
       image: "images/chatgpt-logo.png",
       audio: "/audio/chatgpt.mp3",
@@ -41,10 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "Claude is Anthropic’s safety‑focused LLM, guided by a “Constitutional AI” framework. It excels at long‑context tasks and aims to be helpful, honest, and harmless.",
       keyFeatures: [
-        "Constitutional AI safety guardrails",
-        "Huge (100k token) context window",
-        "Transparent, explanatory style",
-        "Strong reasoning & coding improvements",
+        "Applies Constitutional AI principles to self‑regulate outputs safely.",
+        "Handles up to 100,000 tokens, enabling extremely long document analysis.",
+        "Explains its reasoning steps and asks clarifying questions when needed.",
+        "Offers improved coding and reasoning through iterative model updates.",
       ],
       useCases: [
         "Summarizing long documents",
@@ -53,10 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "Creative & analytical writing",
       ],
       limitations: [
-        "Usage rate/message limits",
-        "Sometimes over‑cautious or verbose",
-        "Factual errors and hallucinations",
-        "Limited third‑party integrations",
+        "Has rate limits and message quotas that disrupt heavy use.",
+        "Tends to produce cautious, verbose answers with repeated disclaimers.",
+        "May refuse benign requests flagged as potentially unsafe.",
+        "Can still hallucinate or misstate facts despite safety measures.",
       ],
       image: "images/claude-logo.webp",
       audio: "/audio/claude.mp3",
@@ -69,10 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "Gemini, from Google DeepMind, is a multimodal AI that handles text, images, audio, and video. It integrates tool‑use and “agentic” planning for advanced workflows.",
       keyFeatures: [
-        "Native multimodal input/output",
-        "Tool use & agentic task planning",
-        "Advanced chain‑of‑thought reasoning",
-        "Tiered models (Nano, Pro, Ultra)",
+        "Processes text, images, audio, and video for rich multimodal tasks.",
+        "Automatically uses external tools to perform actions and fetch data.",
+        "Employs chain‑of‑thought reasoning for structured problem-solving.",
+        "Provides tiered models balancing performance and resource requirements.",
       ],
       useCases: [
         "Image/video analysis & captioning",
@@ -81,10 +81,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "Enterprise agent applications",
       ],
       limitations: [
-        "Closed, Google‑hosted only",
-        "Can hallucinate confidently",
-        "High compute & latency",
-        "Limited direct customization",
+        "Proprietary and accessible only via Google’s cloud platform.",
+        "Can confidently generate incorrect or misleading content.",
+        "High compute demands lead to increased response latency.",
+        "Customization limited to Google’s provided APIs and interfaces.",
       ],
       image: "images/gemini-logo.webp",
       audio: "/audio/gemini.mp3",
@@ -97,10 +97,10 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "V0 is Vercel’s AI‑driven UI generator: describe your design in chat and get production‑ready React/Next.js + Tailwind code with live previews.",
       keyFeatures: [
-        "Chat‑based UI prototyping",
-        "Production‑ready React code",
-        "Live preview & iterative refinement",
-        "Auto‑import of NPM/Tailwind components",
+        "Transforms natural language into production‑ready React/Next.js code.",
+        "Displays live UI previews that update instantly with each refinement.",
+        "Automatically imports npm packages and Tailwind components as needed.",
+        "Supports iterative design tweaks via conversational follow-up prompts.",
       ],
       useCases: [
         "Rapid front‑end prototyping",
@@ -109,10 +109,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "Generating boilerplate UI",
       ],
       limitations: [
-        "Front‑end only (no backend)",
-        "Generated code often needs tweaks",
-        "Context memory can drift",
-        "Subscription‑based with usage caps",
+        "Front‑end only—backend logic and databases require manual implementation.",
+        "Generated code often needs developer tweaks for styling and edge cases.",
+        "Can lose design context in long chats, needing prompt reminders.",
+        "Subscription credits and usage caps may limit prototyping volume.",
       ],
       image: "images/v0-logo.svg",
       audio: "/audio/v0.mp3",
@@ -125,10 +125,10 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "GitHub Copilot is an AI pair‑programmer powered by OpenAI’s Codex/GPT‑4 models. It suggests code and entire functions in real time, right in your IDE.",
       keyFeatures: [
-        "Multi‑line, context‑aware completion",
-        "Copilot Chat for in‑IDE Q&A",
-        "Broad language & framework support",
-        "Pull‑request & CI integration (Copilot X)",
+        "Suggests multi‑line code blocks and functions based on context.",
+        "Provides in‑IDE chat for debugging, documentation, and reviews.",
+        "Adapts to various languages and frameworks with contextual awareness.",
+        "Integrates with CI/CD pipelines to auto‑generate pull request summaries.",
       ],
       useCases: [
         "Boilerplate & repetitive code",
@@ -137,10 +137,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "Test & refactoring assistance",
       ],
       limitations: [
-        "May suggest insecure/buggy code",
-        "License‑leakage risk from training data",
-        "Requires paid subscription",
-        "Privacy concerns sending code to cloud",
+        "May suggest insecure or inefficient code patterns needing review.",
+        "Can reproduce copyrighted snippets, creating potential license issues.",
+        "Requires paid subscription, sometimes restricted by company policy.",
+        "Sends code to cloud servers, raising privacy considerations.",
       ],
       image: "images/copilot-logo.jpg",
       audio: "/audio/copilot.mp3",
@@ -153,10 +153,10 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "DeepSeek is an open‑source LLM from DeepSeek AI, offering strong bilingual (English/Chinese) performance, cutting‑edge Mixture‑of‑Experts efficiency, and massive context windows.",
       keyFeatures: [
-        "Fully open‑source research license",
-        "Bilingual (English & Chinese) training",
-        "MoE efficiency with huge context (128k)",
-        "Competitive coding & reasoning scores",
+        "Fully open‑source models you can self‑host without API fees.",
+        "Bilingual training delivers strong English and Chinese language support.",
+        "Mixture‑of‑Experts design reduces compute cost while boosting capacity.",
+        "Supports up to 128k token contexts for very long documents.",
       ],
       useCases: [
         "Self‑hosted chatbots & assistants",
@@ -165,10 +165,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "Research & fine‑tuning experiments",
       ],
       limitations: [
-        "High hardware requirements",
-        "Custom license on derivatives",
-        "Immature ecosystem/tools",
-        "Slower, less polished latency",
+        "Large models require powerful GPUs and extensive memory.",
+        "Custom derivative license restricts downstream model usage.",
+        "Ecosystem and tooling are less mature than established LLMs.",
+        "Interactive latency can be slow without optimized infrastructure.",
       ],
       image: "/images/deepseek-logo.png.webp",
       audio: "/audio/deepseek.mp3",
@@ -181,10 +181,10 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "Cursor is an AI‑first code editor (a VS Code fork) with deep codebase awareness—offering advanced autocomplete, an AI chat sidebar, and multi‑file edits right in your IDE.",
       keyFeatures: [
-        "Next‑gen AI autocomplete",
-        "Codebase‑aware chat & diffs",
-        "Project‑wide refactoring",
-        "Built‑in docs indexing/search",
+        "AI‑powered autocomplete predicts multi‑line code completions intelligently.",
+        "Includes codebase‑aware chat and diff previews for context‑driven edits.",
+        "Performs project‑wide refactoring by updating multiple files at once.",
+        "Indexes popular library docs for instant in‑editor API guidance.",
       ],
       useCases: [
         "Day‑to‑day software development",
@@ -193,10 +193,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "Learning & experimenting inline",
       ],
       limitations: [
-        "Performance drops in large repos",
-        "Subscription + cloud‑dependency",
-        "Occasional inaccurate suggestions",
-        "Smaller plugin/community ecosystem",
+        "Performance can degrade in very large codebases due to indexing.",
+        "Subscription and cloud dependency may conflict with offline work.",
+        "Occasional incorrect suggestions require manual verification.",
+        "Smaller community means fewer extensions and less third‑party support.",
       ],
       image: "images/cursor-logo.png",
       audio: "/audio/cursor.mp3",
