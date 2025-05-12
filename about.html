@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - LLM Explorer</title>
+    <meta name="description" content="Learn about different LLM models" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="apple-touch-icon" href="./images/llm-explorer-new-logo.jpeg" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#4a73e8" />
+  </head>
+  <body>
+    <div class="flex-col min-h-screen">
+      <header class="header">
+        <div class="container">
+          <div class="header-content">
+            <a href="./index.html" class="logo-link">
+              <div class="logo-container">
+                <img
+                  src="./images/llm-explorer-new-logo.png"
+                  alt="LLM Explorer Logo"
+                  class="logo-img"
+                />
+                <h1 class="logo-text">LLM Explorer</h1>
+              </div>
+            </a>
+            <nav class="main-nav">
+              <a href="./index.html" class="nav-link">Home</a>
+              <a href="./learn.html" class="nav-link">Learn</a>
+              <a href="./about.html" class="nav-link active">About</a>
+              <a href="./promo.html" class="nav-link">Download</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div class="about-content">
+            <h1 class="page-title">About LLM Explorer</h1>
+
+            <section class="about-section">
+              <h2 class="section-title">App Features</h2>
+              <div class="card">
+                <p class="text-black">
+                  LLM Explorer is a Progressive Web App (PWA) designed to
+                  educate users about various Large Language Models (LLMs)
+                  currently available in the market. Our app provides
+                  comprehensive information about popular LLMs such as ChatGPT,
+                  Gemini, Claude, v0, Cursor, and Copilot.
+                </p>
+
+                <h3 class="subsection-title">Key Features:</h3>
+                <ul class="feature-list">
+                  <li>
+                    Interactive learning interface with Canvas visualizations
+                  </li>
+                  <li>Audio descriptions of each LLM model</li>
+                  <li>
+                    Comprehensive information about features, use cases, and
+                    limitations
+                  </li>
+                  <li>Responsive design that works on all devices</li>
+                  <li>Installable as a PWA for offline use</li>
+                  <li>Regular updates as new LLM models are released</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="about-section">
+              <h2 class="section-title">Documentation</h2>
+              <div class="docs-grid">
+                <div class="card">
+                  <div class="card-header-with-icon">
+                    <span class="icon">💻</span>
+                    <h3 class="subsection-title">Installation Guide</h3>
+                  </div>
+                  <p>
+                    LLM Explorer can be installed on your device as a
+                    Progressive Web App for easy access and offline use.
+                  </p>
+                  <ol class="numbered-list">
+                    <li>Visit the LLM Explorer website</li>
+                    <li>
+                      Click the install button in your browser's address bar (or
+                      menu)
+                    </li>
+                    <li>
+                      Follow the prompts to add the app to your home screen
+                    </li>
+                    <li>
+                      Once installed, you can use the app even without an
+                      internet connection
+                    </li>
+                  </ol>
+                </div>
+
+                <div class="card">
+                  <div class="card-header-with-icon">
+                    <span class="icon">🗄️</span>
+                    <h3 class="subsection-title">Data Modification</h3>
+                  </div>
+                  <p>
+                    LLM Explorer uses a JSON file to store information about
+                    each LLM model. To add or modify data:
+                  </p>
+                  <ol class="numbered-list">
+                    <li>
+                      Locate the <code>llm-data.js</code> file in the
+                      <code>js</code> directory
+                    </li>
+                    <li>
+                      Follow the existing JSON structure to add a new model or
+                      update existing information
+                    </li>
+                    <li>
+                      Ensure all required fields are included (id, name,
+                      creator, etc.)
+                    </li>
+                    <li>
+                      Add appropriate image and audio files to the images and
+                      audio directories
+                    </li>
+                    <li>
+                      Update references in the JSON file to point to new assets
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </section>
+
+            <section class="about-section">
+              <h2 class="section-title">Technical Information</h2>
+              <div class="card">
+                <p>
+                  LLM Explorer is built with modern web technologies to provide
+                  a seamless experience across all devices:
+                </p>
+
+                <div class="tech-grid">
+                  <div>
+                    <h3 class="subsection-title">Frontend Technologies:</h3>
+                    <ul class="feature-list">
+                      <li>HTML5</li>
+                      <li>CSS3</li>
+                      <li>Vanilla JavaScript</li>
+                      <li>HTML5 Canvas API</li>
+                      <li>Web Audio API</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3 class="subsection-title">PWA Features:</h3>
+                    <ul class="feature-list">
+                      <li>Service Worker for offline functionality</li>
+                      <li>Web App Manifest for installation</li>
+                      <li>Responsive design for all screen sizes</li>
+                      <li>Local caching of assets and data</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="center-button">
+              <a href="./learn.html" class="button primary"
+                >Start Exploring LLMs</a
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="copyright">
+              <p>&copy; 2023 LLM Explorer. All rights reserved.</p>
+            </div>
+            <div class="footer-nav">
+              <a href="./index.html" class="footer-link">Home</a>
+              <a href="./learn.html" class="footer-link">Learn</a>
+              <a href="./about.html" class="footer-link">About</a>
+              <a href="./promo.html" class="footer-link">Download</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

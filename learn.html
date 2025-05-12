@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn - LLM Explorer</title>
+    <meta name="description" content="Learn about different LLM models" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="apple-touch-icon" href="images/llm-explorer-new-logo.png" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#4a73e8" />
+  </head>
+  <body>
+    <div class="flex-col min-h-screen">
+      <header class="header">
+        <div class="container">
+          <div class="header-content">
+            <a href="index.html" class="logo-link">
+              <div class="logo-container">
+                <img
+                  src="images/llm-explorer-new-logo.png"
+                  alt="LLM Explorer Logo"
+                  class="logo-img"
+                />
+                <h1 class="logo-text">LLM Explorer</h1>
+              </div>
+            </a>
+            <nav class="main-nav">
+              <a href="index.html" class="nav-link">Home</a>
+              <a href="learn.html" class="nav-link active">Learn</a>
+              <a href="about.html" class="nav-link">About</a>
+              <a href="promo.html" class="nav-link">Download</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div class="learn-header">
+            <h1 class="page-title">Interactive LLM Learning</h1>
+            <p class="page-description">
+              Explore different LLM models and learn about their capabilities
+              and use cases.
+            </p>
+          </div>
+
+          <div class="learn-grid">
+            <div class="sidebar">
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="card-title">Model Selection</h2>
+                  <p class="card-description">Choose a model to learn about</p>
+                </div>
+                <div class="card-content">
+                  <div class="model-buttons" id="model-buttons">
+                    <!-- Model buttons will be inserted here by JavaScript -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-content">
+              <div class="card" id="model-card">
+                <div class="card-header" id="model-header">
+                  <!-- Model header will be inserted here by JavaScript -->
+                </div>
+                <div class="card-content">
+                  <div class="canvas-container">
+                    <canvas id="model-canvas" width="800" height="400"></canvas>
+                    <audio id="model-audio"></audio>
+                  </div>
+
+                  <div class="audio-controls">
+                    <button id="audio-button" class="button outline">
+                      <span class="icon">🔊</span>
+                      <span id="audio-button-text">Play Audio Description</span>
+                    </button>
+                  </div>
+
+                  <div class="tabs">
+                    <div class="tabs-list">
+                      <button class="tab-button active" data-tab="overview">
+                        Overview
+                      </button>
+                      <button class="tab-button" data-tab="features">
+                        Key Features
+                      </button>
+                      <button class="tab-button" data-tab="usecases">
+                        Use Cases
+                      </button>
+                      <button class="tab-button" data-tab="limitations">
+                        Limitations
+                      </button>
+                    </div>
+                    <div class="tab-content active" id="overview-tab">
+                      <!-- Overview content will be inserted here by JavaScript -->
+                    </div>
+                    <div class="tab-content" id="features-tab">
+                      <!-- Features content will be inserted here by JavaScript -->
+                    </div>
+                    <div class="tab-content" id="usecases-tab">
+                      <!-- Use cases content will be inserted here by JavaScript -->
+                    </div>
+                    <div class="tab-content" id="limitations-tab">
+                      <!-- Limitations content will be inserted here by JavaScript -->
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button id="prev-model" class="button outline">
+                    Previous Model
+                  </button>
+                  <button id="next-model" class="button primary">
+                    Next Model
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="copyright">
+              <p>&copy; 2023 LLM Explorer. All rights reserved.</p>
+            </div>
+            <div class="footer-nav">
+              <a href="index.html" class="footer-link">Home</a>
+              <a href="learn.html" class="footer-link">Learn</a>
+              <a href="about.html" class="footer-link">About</a>
+              <a href="promo.html" class="footer-link">Download</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/llm-data.js"></script>
+    <script src="js/learn.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

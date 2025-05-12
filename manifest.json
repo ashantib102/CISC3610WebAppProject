@@ -1,0 +1,38 @@
+{
+  "name": "LLM Explorer",
+  "short_name": "LLM Explorer",
+  "description": "Learn about different LLM models interactively",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#4a73e8",
+  "theme_color": "#4a73e8",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/llm-explorer-new-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/llm-explorer-new-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/llm-explorer-home.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "LLM Explorer Home Screen"
+    },
+    {
+      "src": "images/llm-explorer-mobile-app.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "LLM Explorer Learning Interface"
+    }
+  ]
+}
